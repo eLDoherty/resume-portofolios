@@ -1,0 +1,36 @@
+@media (max-width: 575.98px) {
+    .skill {
+        width: 200px;
+    }
+    h5 {
+        font-size: 18px !important;
+    }
+}
+
+
+
+
+
+/* min width */
+@media (min-width: 576px) { 
+    .container.content {
+        height : 500px;
+    }
+}
+@media (min-width: 992px) { 
+    html {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .container.content {
+        height: 550px;
+    }
+    .container.project {
+        width: 90%;
+    }
+    div#accordionExample {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+}
