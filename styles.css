@@ -1,0 +1,133 @@
+h3 {
+    color: #e0d7ce;
+    background-color: #363640;;
+    text-align: center;
+    padding: 10px;
+  }
+  .container.header {
+    text-align: center;
+  }
+  
+  .animated-progress {
+      width: 100%;
+      height: 30px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      border: #363640ad solid 0.5px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .animated-progress span {
+      height: 100%;
+      display: block;
+      width: 0;
+      color: rgb(224 215 206);
+      line-height: 30px;
+      position: absolute;
+      text-align: end;
+      padding-right: 5px;
+    }
+    
+    .progress-blue span {
+      background-color: #a52626;
+      width: 85%;
+    }
+    .progress-yellow span {
+      background-color: #a79300;
+      width: 70%;
+    }
+    .progress-green span {
+      background-color: #2d522d;
+      width: 80%;
+    }
+    .progress-purple span {
+      background-color: #361350;
+      width: 80%;
+    }
+    .progress-red span {
+      background-color: #382c1b;
+      width: 60%;
+    }
+    .progress-jquery span {
+      background-color: #2d522d;
+      width: 75%;
+    }
+    .progress-laravel span {
+      background-color: #361350;
+      width: 65%;
+    }
+    .progress-bootstrap span {
+      background-color: #a52626;
+      width: 85%;
+    }
+    .progress-wordpress span {
+      background-color: #006f25;
+      width: 85%;
+    }
+    /* header */
+  .header {
+      height: fit-content !important;
+      padding: 50px !important;
+  }
+
+  /* PROJECT DESK */
+  
+  .project .desc1 {
+    text-align: center;
+    border: 1px solid black;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+  }
+  .github {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+
+  /* Overlay project */
+
+.project {
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    height: 230px !important;
+  }
+  
+  .imagepro {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(224 215 206 / 68%); /* Black see-through */
+    color: #f1f1f1; 
+    width: 94%;
+    height: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .project:hover .overlay {
+    opacity: 1;
+  }
+
+.pro {
+  margin-top: 30px !important;
+}
+button.showAll {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: none;
+  padding: 10px 20px;
+}
