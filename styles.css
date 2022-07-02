@@ -1,133 +1,126 @@
-h3 {
-    color: #e0d7ce;
-    background-color: #363640;;
-    text-align: center;
-    padding: 10px;
-  }
-  .container.header {
-    text-align: center;
-  }
-  
-  .animated-progress {
-      width: 100%;
-      height: 30px;
-      border-radius: 5px;
-      margin-bottom: 15px;
-      border: #363640ad solid 0.5px;
-      overflow: hidden;
-      position: relative;
-    }
-    
-    .animated-progress span {
-      height: 100%;
-      display: block;
-      width: 0;
-      color: rgb(224 215 206);
-      line-height: 30px;
-      position: absolute;
-      text-align: end;
-      padding-right: 5px;
-    }
-    
-    .progress-blue span {
-      background-color: #a52626;
-      width: 85%;
-    }
-    .progress-yellow span {
-      background-color: #a79300;
-      width: 70%;
-    }
-    .progress-green span {
-      background-color: #2d522d;
-      width: 80%;
-    }
-    .progress-purple span {
-      background-color: #361350;
-      width: 80%;
-    }
-    .progress-red span {
-      background-color: #382c1b;
-      width: 60%;
-    }
-    .progress-jquery span {
-      background-color: #2d522d;
-      width: 75%;
-    }
-    .progress-laravel span {
-      background-color: #361350;
-      width: 65%;
-    }
-    .progress-bootstrap span {
-      background-color: #a52626;
-      width: 85%;
-    }
-    .progress-wordpress span {
-      background-color: #006f25;
-      width: 85%;
-    }
-    /* header */
-  .header {
-      height: fit-content !important;
-      padding: 50px !important;
-  }
-
-  /* PROJECT DESK */
-  
-  .project .desc1 {
-    text-align: center;
-    border: 1px solid black;
-  }
-  .social {
-    display: flex;
-    justify-content: center;
-  }
-  .github {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-
-  /* Overlay project */
-
-.project {
-    position: relative;
-    width: 50%;
-    max-width: 300px;
-    height: 230px !important;
-  }
-  
-  .imagepro {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  .overlay {
-    position: absolute; 
-    bottom: 0; 
-    background: rgb(224 215 206 / 68%); /* Black see-through */
-    color: #f1f1f1; 
-    width: 94%;
-    height: 100%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .project:hover .overlay {
-    opacity: 1;
-  }
-
-.pro {
-  margin-top: 30px !important;
+body {
+  font-family: 'Nunito', sans-serif;
 }
-button.showAll {
-  display: flex;
+
+.container {
+  padding: 30px;
   margin: 0 auto;
-  margin-top: 50px;
-  border: none;
-  padding: 10px 20px;
 }
+section {
+  margin-bottom: -40px;
+}
+h1, h2, h3 {
+  margin: 10px 0;
+}
+h2 {
+  font-size: 30px;
+}
+p , a , li {
+  font-size: 18px;
+  line-height: 1.3;
+  margin: 10px 0;
+}
+a {
+  text-decoration: none;
+  color: #707070;
+}
+.resume-wrapper {
+  max-width: 1200px;
+  margin: 30px auto;
+  box-shadow: 1px 1px 30px 1px;
+  padding: 0 30px;
+}
+/* Personal Information */
+.name {
+  font-size: 50px;
+  margin-top: 50px;
+}
+.detail-information p {
+  font-weight: 700;
+}
+.detail-information p span {
+  font-weight: 300;
+}
+
+/* Section Employment */
+.employment-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30px auto;
+}
+.emp-left {
+  width: 35%;
+  text-align: right;
+  border-right: 1px solid rgba(0, 0, 0, 0.185);
+  padding-right: 20px;
+}
+.emp-right {
+  width: 60%;
+  text-align: left;
+}
+.emp-date {
+  font-weight: 700;
+}
+
+/* Section Skill */
+.skill-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.skill {
+  width: 28%;
+}
+.skill p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.skill p span {
+  font-weight: 300;
+}
+
+/* Section Certification */
+.certification img {
+  max-width: 40%;
+  border: 3px solid black;
+}
+
+/* Responsiveness */
+@media (max-width: 576px) { 
+  .resume-wrapper {
+    padding: 0;
+  }
+  .name {
+    font-size: 22px;
+  }
+  p , li , a {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .employment-wrapper {
+    flex-direction: column;
+  }
+  .employment-wrapper p {
+    margin: 0;
+  }
+  .emp-left {
+    width: 100%;
+    border-right: none;
+    text-align: left;
+  }
+  .emp-right {
+    width: 100%;
+  }
+  .certification img {
+    max-width: 100%;
+  }
+  .skill-wrapper {
+    flex-direction: column;
+  }
+  .skill-wrapper .skill {
+    width: 100%;
+  }
+ }
