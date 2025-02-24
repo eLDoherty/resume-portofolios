@@ -101,10 +101,6 @@ section {
     background-color: #dfe6e9;
 }
 
-.emp-left {
-    width: 30%;
-}
-
 .emp-right {
     width: 65%;
 }
@@ -130,6 +126,9 @@ section {
     font-size: 16px;
     color: #34495e;
     line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    padding-left: 18px;
 }
 
 .jobs li {
@@ -165,6 +164,19 @@ section {
 }
 
 /* Certification Section */
+.cert-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.certif-wrapper {
+    width: 32%;
+}
+
+.certif-wrapper img {
+    width: 100%;
+}
+
 .certification {
     background-color: #ecf0f1;
     border-radius: 10px;
@@ -180,6 +192,7 @@ section {
 
 .certification .employment-wrapper {
     margin-bottom: 30px;
+    width: 30%;
 }
 
 .certification .employment-wrapper .emp-right img {
@@ -359,6 +372,15 @@ footer a:hover {
     .skill {
         width: 100%;
         margin-bottom: 15px;
+    }
+
+    .cert-wrapper {
+        flex-direction: column;
+    }
+    
+    .certif-wrapper {
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
 
